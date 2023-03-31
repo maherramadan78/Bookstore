@@ -41,7 +41,7 @@
 
 <a name="about-project"></a>
 <!-- PROJECT DESCRIPTION -->
-**[Bookstore]** is a website where the users can add new book to the list, it has been made by using React.js 
+**[Bookstore]** is a website where the users can add new book to the list with authors name it has been made by React.js 
 
 
 
@@ -132,7 +132,7 @@ Run these commands:
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **[Create a calculator to make simple operations]**
+- [ ] **[style]**
 - [ ] **[Create dinamic website with a navbar and different sections]**
 
 
