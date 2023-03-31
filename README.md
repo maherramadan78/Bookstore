@@ -97,7 +97,9 @@ In order to run this project you need:
 - [ ] Clone this repository to your desired folder:
 
 `
-git clone https://github.com/maherramadan78/Bookstore.git
+
+git clone (https://github.com/maherramadan78/Bookstore.git)
+
 `
 - [ ] Open the file in your code editor
 
