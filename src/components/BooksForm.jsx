@@ -35,6 +35,7 @@ const BooksForm = ({ books, setBooks }) => {
         <input type="text" placeholder="Book title" onChange={handleTitle} />
         <input type="text" placeholder="author" onChange={handleAuthor} />
         <button type="submit">Add book</button>
+        <button type="button">Remove book</button>
       </form>
       <p>{handleError()}</p>
     </div>
