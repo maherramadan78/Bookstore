@@ -125,6 +125,7 @@ Run these commands:
 
 - GitHub: [@maherramadan78](https://github.com/maherramadan78)
 - Linkedin: [@maherramadan](https://www.linkedin.com/in/maher-ramadan-655623a4/)
+- Twiter: [comming soon]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -163,7 +164,7 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](MIT.md) licensed.
+This project is [MIT](LICENSE) licensed.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
