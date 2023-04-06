@@ -1,8 +1,10 @@
 import { useState } from 'react';
-import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
 import uuid from 'react-uuid';
+import { postBook } from '../redux/books/booksSlice';
 
-const BooksForm = ({ books, setBooks }) => {
+const BooksForm = () => {
+  const dispatch = useDispatch();
   const [newBook, setNewBook] = useState('');
   const [newAuthor, setNewAuthor] = useState('');
   const [state, setState] = useState(false);
@@ -10,10 +12,11 @@ const BooksForm = ({ books, setBooks }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     if (newBook !== '' && newAuthor !== '') {
-      const newArr = [...books];
-      newArr.push({ name: newBook, author: newAuthor, id: uuid() });
-      setBooks(newArr);
+      dispatch(postBook({
+        item_id: uuid(), title: newBook, author: newAuthor, category: 'undefined',
+      }));
       setState(false);
+      event.target.reset();
     } else {
       setState(true);
     }
@@ -35,16 +38,10 @@ const BooksForm = ({ books, setBooks }) => {
         <input type="text" placeholder="Book title" onChange={handleTitle} />
         <input type="text" placeholder="author" onChange={handleAuthor} />
         <button type="submit">Add book</button>
-        <button type="button">Remove book</button>
       </form>
       <p>{handleError()}</p>
     </div>
   );
-};
-
-BooksForm.propTypes = {
-  books: PropTypes.instanceOf(Array).isRequired,
-  setBooks: PropTypes.func.isRequired,
 };
 
 export default BooksForm;

@@ -1,9 +1,18 @@
-import { useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { useEffect } from 'react';
 import BooksForm from './BooksForm';
+import Book from './Books';
+import { fetchData } from '../redux/books/booksSlice';
 
 const Logic = () => {
-  const [books, setBooks] = useState([]);
+  const dispatch = useDispatch();
+  const { books, counter } = useSelector((store) => store.books);
 
+  useEffect(
+    () => {
+      dispatch(fetchData());
+    }, [dispatch, counter],
+  );
   const showBooks = () => {
     if (books.length === 0) {
       return (
@@ -14,19 +23,13 @@ const Logic = () => {
     }
     return (
       <div>
-        { books.map((book) => (
-          <ul key={book.id}>
-            <li>
-              {' '}
-              name =
-              {book.name}
-            </li>
-            <li>
-              {' '}
-              author=
-              {book.author}
-            </li>
-          </ul>
+        {Object.keys(books).map((item) => (
+          <Book
+            key={item}
+            title={books[item][0].title}
+            id={item}
+            author={books[item][0].author}
+          />
         ))}
       </div>
     );
@@ -35,7 +38,7 @@ const Logic = () => {
   return (
     <div className="App">
       {showBooks()}
-      <BooksForm books={books} setBooks={setBooks} />
+      <BooksForm />
     </div>
   );
 };
