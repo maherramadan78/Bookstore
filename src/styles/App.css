@@ -67,8 +67,8 @@ body {
 
 .nav-link {
   opacity: 0.5;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
+  font-family: "Montserrat";
+  font-size: 0.813rem;
   color: #121212;
   letter-spacing: 1.9px;
 }
@@ -121,13 +121,13 @@ a {
 .bookCategory {
   font-weight: 700;
   color: var(--black);
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
   font-size: 0.875rem;
   opacity: 0.5;
 }
 
 .bookTitle {
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto Slab";
   margin-top: 0.188rem;
   font-size: 1.5rem;
   letter-spacing: -0.2px;
@@ -139,7 +139,7 @@ a {
   font-size: 0.875rem;
   font-weight: 300;
   color: #4386bf;
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto Slab" , sans-serif;
 }
 
 .bookbtns {
@@ -152,7 +152,7 @@ a {
   font-family: "Roboto Slab", serif;
   background-color: transparent;
   border: none;
-  color: #4386bf;
+  color: var(--cool-blue);
   font-size: 0.875rem;
   font-weight: 300;
   align-items: center;
@@ -222,7 +222,7 @@ a {
 
 .chapter-label,
 .chapter {
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto Slab";
   font-weight: 300;
   color: var(--black);
 }
@@ -234,7 +234,7 @@ a {
 
 .chapter {
   margin-top: 1rem;
-  font-size: 1.3rem;
+  font-size: 1rem;
   letter-spacing: -0.4px;
 }
 
@@ -244,7 +244,7 @@ a {
   background-color: #0290ff;
   border-radius: 3px;
   padding: 8px 24px;
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto Slab";
   font-weight: 300;
   letter-spacing: 0.5px;
   color: #fff;
@@ -299,7 +299,7 @@ a {
   color: #fff;
   font-size: 0.813rem;
   font-weight: 700;
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto Slab";
 }
 
 .construction {
